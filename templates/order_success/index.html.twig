@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OrderValidate{% endblock %}
+
+{% block content %}
+    <h2>Paiement de commande</h2><br>
+    <p>
+        Bonjour <strong>{{ order.user.firstname }} {{ order.user.lastname }},</strong><br><br>
+        Nous vous remercions pour votre commande n°{{ order.reference }}<br>
+    <hr>
+        Une onfirmation vient de vous être envoyée par email à l'adresse <strong> {{ order.user.email }}</strong>.<br>
+        {{ order.delivery|raw }}
+    <hr>
+        Pour suivre votre compte rendez-vous dans votre <a href="{{ path('app_account_order') }}">compte</a>
+    </p>
+{% endblock %}

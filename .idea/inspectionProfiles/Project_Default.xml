@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="checkout-button" />
+            <item index="1" class="java.lang.String" itemvalue="sk_test_51mhx6qiqahiwrjok3lw0cfjy3tuynfshhetwcxgsyxnx7ywawsvfisiz7zysyujl0lwmqr6wyfylkm2rlb9e5spj00lmcayujp" />
+            <item index="2" class="java.lang.String" itemvalue="application" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

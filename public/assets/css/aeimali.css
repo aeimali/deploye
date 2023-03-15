@@ -1,0 +1,161 @@
+body {
+ position: relative;
+}
+
+.navbar-item-custom, .navbar-item-custom a {
+ color: #ffff;
+}
+.footer-custom {
+ text-align: center;
+ position: absolute;
+ width: 100%;
+ background-color: #dfeaff;
+ margin-top: 25px;
+}
+.product-item h5 {
+ text-transform: uppercase;
+ font-size: 15px;
+ margin-bottom: 1px;
+}
+
+.col-3 {
+ flex-basis: 25%;
+ margin-top: 50px;
+ padding: 15px;
+ min-width: 200px;
+}
+
+/* nos meilleures ventes*/
+
+/*.product-item {
+ flex-basis: 25%;
+ margin-top: 50px;
+ padding: 15px;
+ min-width: 200px;
+ border: 1px solid black;
+}
+
+.product-item img {
+ width: 100%;
+}
+
+.product-item .product-subtitle {
+ font-size: 14px;
+ display: block;
+ margin-bottom: 10px;
+}
+
+.product-item .product-price {
+ font-size: 15px;
+ font-weight: bold;
+}*/
+
+.product-container {
+ margin-bottom: 150px;
+}
+
+.product-page-price {
+ font-size: 18px;
+}
+
+.cart-icon {
+ height: 20px;
+ padding-left: 20px;
+}
+.back {
+ background-color: #ffffff;
+}
+
+.block-small {
+ max-width: 600px;
+ margin: 0 auto;
+}
+
+.form-check {
+ background-color: #f4f8ff;
+ padding: 20px 65px;
+ margin-top: 7px;
+}
+
+.col-form-label {
+ font-weight: bold;
+}
+
+.order-summary {
+ background-color: #f4f8ff;
+ padding: 20px;
+ margin-top: 22px;
+}
+
+.account-item {
+ background-color: #dfe4ea;
+ padding: 60px;
+}
+
+.account-item a {
+ text-transform: uppercase;
+ font-size: 15px;
+ font-weight: bold;
+}
+
+.account-item a:hover {
+ color: #70a1ff;
+ text-decoration: none;
+}
+ /* preduits */
+
+.sec {
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.products .card {
+    width: 200px;
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    /*padding: 5px;*/
+    margin-bottom: 5px;
+}
+
+.products .card img {
+    height: 180px;
+    width: 180px;
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box {
+    color: #f63e4e;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.products .card .box .btn {
+    font-size: 10px;
+    color: #f63e4e;
+    padding: 6px 6px;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}

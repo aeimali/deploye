@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block carousel %} {% endblock %}
+
+{% block content %}
+
+    <!-- Three columns of text below the carousel -->
+    <h3>Nos meilleures ventes</h3>
+
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-2">
+                {% include 'product/single_product.html.twig'%}
+            </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading mt-3"> Aei Mali est une société malienne spécialisée dans le commerce électronique <span class="text-muted">avec des professionnel au grand savoir faire.</span></h2>
+            <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+            <img src="{{ asset('assets/img/pexels-aleks-magnusson-4267775.jpg') }}" class="img-fluid" alt="">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading mt-3">On est a votre écoute pour toutes <span class="text-muted">assistance et conseil.</span></h2>
+            <p class="lead"></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="{{ asset('assets/img/istockphoto-1321462048-1024x1024.jpg') }}" class="img-fluid" alt="">
+        </div>
+    </div>
+    
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+{% endblock %}

@@ -1,0 +1,9 @@
+<div class="card text-center">
+    <a href="{{ path('app_product', { 'slug' : product.slug }) }}" class="img"><img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid"></a>
+    <h6 class="desc">{{ product.name }}</h6>
+    <span class="title">{{ product.subtitle }}</span>
+    <div class="box">
+    <span class="price">{{ product.price / 100 }} FCFA</span>
+        <a href="{{ path('app_add_to_cart', {'id' : product.id}) }}"><button class="btn">Acheter</button></a>
+    </div>
+</div>

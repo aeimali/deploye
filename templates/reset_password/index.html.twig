@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mot de passe oublier{% endblock %}
+
+{% block content %}
+    <div class="block-small">
+        {% for message in app.flashes('notice') %}
+            <div class="alert alert-info">{{ message }}</div>
+        {% endfor %}
+        <form method="post">
+
+            <h1 class="h3 mb-3 font-weight-normal">Réinitialiser mot de passe</h1>
+            <label for="inputEmail">Votre email</label>
+            <input type="email" value="" name="email" id="inputEmail" class="form-control"
+                   autocomplete="email" required autofocus placeholder="Votre email">
+
+            {#
+                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                See https://symfony.com/doc/current/security/remember_me.html
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" name="_remember_me"> Remember me
+                    </label>
+                </div>
+            #}
+
+            <button class="btn btn-lg btn-info btn-block mt-3" type="submit">
+                Valider
+            </button>
+            <hr>
+            <p class="text-center">Ou souhaitez-vous<a href="{{ path('app_register') }}"> vous conneter</a> ?</p>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous Contacter{% endblock %}
+
+{% block content %}
+    <h2>Nous contacter</h2>
+    <p>N'hésitez pas à prendre contact avec notre équipe. Nous vous répondrons dans les meilleurs délais.</p>
+
+    {% for message in app.flashes('notice') %}
+        <div class="alert alert-info">{{ message }}</div>
+    {% endfor %}
+
+    <div class="col-md-8">{{ form(form) }}</div>
+    <div class="col-md-4">
+        <strong>AeiMali SARL</strong>
+        <hr>
+        +223 20 20 17  15 <br>
+        +223 97 25 71 98 <br>
+        Rue 88 Porte 156 Niamakoro Cité Unicef, Bamako, Mali <br>
+        contactaeimali@gmail.com <br>
+    </div>
+{% endblock %}
